@@ -1,0 +1,151 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    /* Arka plan rengi */
+    color: #333;
+    /* Yazı rengi */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #4a90e2;
+    /* Başlık rengi */
+    text-align: center;
+    /* Ortala */
+}
+
+/* Uygulama Container */
+.app-container {
+    max-width: 600px;
+    /* Maksimum genişlik */
+    margin: 0 auto;
+    /* Ortala */
+    padding: 20px;
+    /* İçerik için boşluk */
+    background-color: white;
+    /* Beyaz arka plan */
+    border-radius: 8px;
+    /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Gölge efekti */
+}
+
+/* To-Do List */
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Ortala */
+    margin-top: 30px;
+    /* Üst boşluk */
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    /* Elemanları yan yana yerleştir */
+    align-items: center;
+    /* Dikey olarak ortala */
+    background-color: white;
+    /* Beyaz arka plan */
+    border: 1px solid #ddd;
+    /* Kenar rengi */
+    border-radius: 5px;
+    /* Köşe yuvarlama */
+    padding: 10px;
+    /* İç boşluk */
+    margin: 10px 0;
+    /* Dikey boşluk */
+    width: 100%;
+    /* Tam genişlik */
+    max-width: 300px;
+    /* Maksimum genişlik */
+    box-shadow: 0 2px 4
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+    /* Hover efekti */
+}
+
+/* To-Do Butonları */
+.button-group {
+    display: flex;
+    gap: 10px;
+    /* Butonlar arası boşluk */
+}
+
+.edit-button,
+.delete-button {
+    background: none;
+    /* Arka plan yok */
+    border: none;
+    /* Kenar yok */
+    cursor: pointer;
+    /* İmleci işaretle */
+    color: #4a90e2;
+    /* İkon rengi */
+    transition: color 0.3s;
+    /* Renk geçişi */
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    color: #357ab8;
+    /* Hover rengi */
+}
+
+/* To-Do Oluşturma Girişi */
+.input-container {
+    display: flex;
+    justify-content: center;
+    /* Ortala */
+    margin-bottom: 20px;
+    /* Alt boşluk */
+}
+
+.input-container input[type="text"] {
+    padding: 10px;
+    /* İç boşluk */
+    border: 1px solid #ccc;
+    /* Kenar rengi */
+    border-radius: 5px;
+    /* Köşe yuvarlama */
+    width: 300px;
+    /* Genişlik */
+    margin-right: 10px;
+    /* Sağ boşluk */
+    transition: border 0.3s;
+    /* Kenar geçişi */
+}
+
+.input-container input[type="text"]:focus {
+    border-color: #4a90e2;
+    /* Focus rengi */
+    outline: none;
+    /* Kenar hatası yok */
+}
+
+.input-container button {
+    padding: 10px 15px;
+    /* İç boşluk */
+    background-color: #4a90e2;
+    /* Buton arka plan rengi */
+    color: white;
+    /* Yazı rengi */
+    border: none;
+    /* Kenar yok */
+    border-radius: 5px;
+    /* Köşe yuvarlama */
+    cursor: pointer;
+    /* İmleci işaretle */
+    transition: background-color 0.3s;
+    /* Arka plan geçişi */
+}
+
+.input-container button:hover {
+    background-color: #357ab8;
+    /* Hover rengi */
+}
